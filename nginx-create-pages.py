@@ -5,7 +5,7 @@ import json
 # Replace with a known-404 page for whatever you want. Doing this so the nginx version is accurate.
 url_404 = 'https://askiiart.net/sdlfjsadljfs'
 html_404 = str(requests.get(url_404).text)
-boykisser_url = 'https://askiiart.net/assets/boykisser.png'
+boykisser_url = '/boykisser.png'
 gandalf_url = '/you.gif'
 
 try:
