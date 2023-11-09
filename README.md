@@ -36,8 +36,6 @@ Collection of HTTP status codes, from [@yassie_j@0w0.is](https://0w0.is/yassie_j
 ## nginx rule
 
 ```nginx
-error_page 202 /error/202.html;
-error_page 204 /error/204.html;
 error_page 300 /error/300.html;
 error_page 301 /error/301.html;
 error_page 401 /error/401.html;
