@@ -6,6 +6,7 @@ import json
 url_404 = 'https://askiiart.net/sdlfjsadljfs'
 html_404 = str(requests.get(url_404).text)
 boykisser_url = 'https://askiiart.net/assets/boykisser.png'
+gandalf_url = '/you.gif'
 
 try:
     os.mkdir('pages')
@@ -26,8 +27,8 @@ for code in codes_dict:
         # - (300 Multiple Choices is the actual error code? Geddit?)
         new_html = new_html.replace(
             '<h1>300 Poll</h1>', '<h1>300 Poll</h1><br>57% Yes, 43% No<br>(300 Multiple Choices is the actual error code? Geddit?)')
+    elif code == "403":
+        new_html = new_html.replace('<h1>403 You Shall Not Pass</h1>',
+                                    f'<h1>403 You Shall Not Pass</h1><br><img src={gandalf_url} alt=\"gandalf saying you looped infinitely\" width=\"350\"')
     with open(f'pages/{code}.html', 'w') as new_file:
         new_file.write(new_html)
-
-
-exit()
