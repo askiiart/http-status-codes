@@ -4,7 +4,7 @@ HTTP status codes for nginx, but better.
 
 ## Original post
 
-Collection of [@yassie_j@0w0.is](https://0w0.is/yassie_j)'s HTTP response status codes:
+Collection of HTTP status codes, from [@yassie_j@0w0.is](https://0w0.is/yassie_j) and a couple others:
 
 - 403 [You Shall Not Pass](https://0w0.is/notice/AZpeq9kdiVbKocpo0m)
 - 301 [Your Princess in in Another Castle](https://0w0.is/notice/AZpfAtcGtx1gr4oHVg)
@@ -31,10 +31,7 @@ Collection of [@yassie_j@0w0.is](https://0w0.is/yassie_j)'s HTTP response status
   - (300 Multiple Choices is the actual error code? Geddit?)
 - 404 [You Made A Typo In The URL Didn't You](https://0w0.is/notice/AZpik5MrV9JpId4cTI)
 - 423 [Fine Then Keep Your Secrets](https://0w0.is/notice/AZpj18ZUqKTa9u78Pg)
-
-## Additions
-
-- 409 [i'm scared stop asking me q.q](https://meow.woem.cat/notes/9lgiyx2aahggxb4d)
+- 429 [i'm scared stop asking me q.q](https://meow.woem.cat/notes/9lgiyx2aahggxb4d)
 
 ## nginx rule
 
