@@ -1,10 +1,14 @@
 import requests
 import os
 import json
+from subprocess import getoutput
 
-# Replace with a known-404 page for whatever you want. Doing this so the nginx version is accurate.
-url_404 = 'https://askiiart.net/sdlfjsadljfs'
-html_404 = str(requests.get(url_404).text)
+# Replaces nginx version with actual version, provide URL to site to find nginx version
+url = 'https://askiiart.net'
+with open('stock-404.html', 'r') as html_404:
+    html_404 = html_404.read()
+    html_404 = html_404.replace('nginx/0.0.0', requests.get(url).headers['Server'])
+    
 boykisser_url = '/boykisser.png'
 gandalf_url = '/you.gif'
 
